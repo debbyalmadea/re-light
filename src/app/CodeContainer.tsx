@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import SyntaxHighlight from "./SyntaxHighlight";
-import { javaKeywords, jsxKeywords, pythonKeywords } from "./lib/keywords";
-import { javaPattern, jsxPattern, pythonPattern } from "./lib/pattern";
 
 const pythonRegex = /(?:def|class|for|if)\s+\w+\s*\(?.*\)?\:\s*/;
 const jsxRegex = /(?:const|function|var|let)\s+\w+/;

@@ -7,8 +7,27 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faMinus } from "@fortawesome/free-solid-svg-icons";
 config.autoAddCss = false;
 
+const defaultCode = `
+export const metadata = {
+  title: "Syntax Highlighting - Python",
+  description:
+    "Python syntax highlighting using string matching algorithm and regular expression",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
+    </html>
+  );
+}
+`;
 export default function Home() {
-  const [code, setCode] = useState("");
+  const [code, setCode] = useState(defaultCode);
   const [textareaVisibility, setTextareaVisibility] = useState(true);
   const textareaRef = useRef<null | HTMLTextAreaElement>(null);
 
