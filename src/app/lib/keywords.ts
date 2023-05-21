@@ -135,7 +135,7 @@ export const javaKeywords : IKeywords= {
 }
 
 export const jsxKeywords: IKeywords = {
-  basic: [...javaKeywords.basic, "export", "default", "unknown", "null", "as", "from"],
+  basic: [...javaKeywords.basic, "as", "export", "default", "from", "undefined", "unknown"],
   important: [
     "const",
     "let",
