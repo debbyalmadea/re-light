@@ -7,7 +7,7 @@ import {
   numberRegex,
   operationRegex,
   paramsRegex,
-  paranthesesRegex,
+  parenthesesRegex,
   pythonPattern,
   regexRegex,
   stringRegex,
@@ -99,7 +99,7 @@ const SyntaxHighlight = ({
         (match) => `<span class="text-sky-300">${match}</span>`
       )
       .replace(
-        paranthesesRegex,
+        parenthesesRegex,
         (match) => `<span class="text-pink-400">${match}</span>`
       )
       .replace(

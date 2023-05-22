@@ -57,7 +57,7 @@ export default function Home() {
       </div>
       <div className="flex flex-row justify-center items-start w-full space-x-4">
         {textareaVisibility ? (
-          <div className="p-6 bg-transparent rounded-xl border-slate-900 border-2 flex flex-col items-start justify-start w-1/2">
+          <div className="p-6 bg-slate-900 rounded-xl border-slate-900 border-2 flex flex-col items-start justify-start w-1/2">
             <button
               onClick={(e) => setTextareaVisibility(false)}
               className="hover:bg-slate-800 w-10 h-10 flex justify-center items-center hover:rounded-lg"
@@ -68,7 +68,7 @@ export default function Home() {
               ref={textareaRef}
               value={code}
               onChange={(e) => setCode(e.target.value)}
-              className="focus:outline-none font-mono bg-transparent h-full w-full pt-0 pb-4"
+              className="focus:outline-none font-mono bg-transparent h-full w-full pb-0 pt-4"
               rows={10}
               autoFocus={true}
             />
